@@ -1,0 +1,52 @@
+<project type="GRO_A4" id="8610"> 
+
+  <!-- FAH settings --> 
+  <stats_credit v="1299"/> 
+    <timeout v="19.8"/> 
+      <deadline v="43.4"/> 
+        <give-credit-bonus v="true"/>
+          <k-factor v="0.75"/>
+            <description v="8612 21-nutlin-mdm2 ff99sb-ildn"/>
+             <natoms v="23648"/>
+             <contact v="vvoelz"/>
+
+  <!-- for internal testing etc. -->
+  <!-- <project-key v="8612"/> -->
+  <!-- <client-type v="internal"/>  -->
+  <!-- <client-type v="beta"/> -->
+  <!-- <client-type v="advanced"/> -->
+  <client-type v="any"/>
+  <accept-mode v="assign"/> 
+  <!-- <accept-mode v="accept"/> -->
+  <weight v="100"/>
+
+  <!-- Project settings --> 
+  <tpr_scheme v="grompp"/> 
+    <runs v="2"/> 
+      <clones v="5000"/> 
+        <retry_max v="2"/> 
+          <delete_old_tpr/> 
+
+  <!-- Simulation settings -->
+  <temperature v="300"/>
+    <md_timestep v="2"/>
+      <max_iter v="1250000"/>
+        <max_gens v="10000"/>
+          <num_dumps v="50"/>
+
+   <!-- Default files -->
+   <use_xtc/> 
+   <files>solvated2.top index.ndx prod_fah.mdp</files> 
+
+   <run>
+     <temperature v="300"/>
+     <files>confout.gro</files>
+   </run>
+
+   <run>
+     <temperature v="300"/>
+     <files>confout.gro</files>
+   </run>
+
+
+</project>

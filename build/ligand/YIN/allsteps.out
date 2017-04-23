@@ -1,0 +1,206 @@
+Building from file nin.mol2 ...
+>> antechamber -i nin.mol2 -fi mol2 -o nin.preedit.mol2 -fo mol2 -at gaff -nc 0 -j 5 -c bcc
+
+
+Total number of electrons: 265; net charge: 0
+INFO: Number of electrons is odd: 265
+      Please check the total charge (-nc flag) and spin multiplicity (-m flag)
+
+Running: /home/tud67309/local/amber11/bin/sqm -O -i sqm.in -o sqm.out
+Error: cannot run "/home/tud67309/local/amber11/bin/sqm -O -i sqm.in -o sqm.out" of bcc() in charge.c properly, exit
+net charge after zeroing capped residues:0.000000
+included_indices [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11, 12, 13, 14, 15, 16, 17, 18, 19, 20, 21, 22, 23, 24, 25, 26, 27, 28, 29, 30, 31, 32, 33, 34, 35, 36, 37, 38, 39, 40, 41, 42, 43, 44, 45]
+excluded_indices []
+total_included_charge 0.0
+net charge after shifting to net charge:0.000000
+Writing to nin.edited.mol2
+...Done.
+*** Make sure the @<TRIPOS>MOLECULE header is correct -- MUST CHANGE THIS BY HAND!! ****    
+@<TRIPOS>MOLECULE
+nin.pdb
+46 51 1 0 0
+SMALL
+NO_CHARGES
+@<TRIPOS>ATOM
+      1 C1         10.0160  -15.8340   25.9040 C.ar      1 UNK      0.000000 
+      2 N1         11.3370  -16.6150   24.0060 N.ar      1 UNK      0.000000 
+      3 O1          6.7510  -15.3200   22.7390 O.3       1 UNK      0.000000 
+      4 C2          9.4980  -16.6000   27.0400 C.ar      1 UNK      0.000000 
+      5 N2         13.0110  -16.4650   22.7090 N.ar      1 UNK      0.000000 
+      6 C3          9.5530  -16.0100   28.3530 C.ar      1 UNK      0.000000 
+      7 N3         10.8510  -15.3140   21.9490 N.ar      1 UNK      0.000000 
+      8 C4         10.1260  -14.7080   28.3830 C.ar      1 UNK      0.000000 
+      9 N4         12.2740  -17.2910   24.6340 N.ar      1 UNK      0.000000 
+     10 C5         10.6280  -13.9280   27.3240 C.ar      1 UNK      0.000000 
+     11 C6         10.5760  -14.5140   26.0360 C.ar      1 UNK      0.000000 
+     12 C7          7.5570  -15.2740   23.9390 C.3       1 UNK      0.000000 
+     13 C8         13.3460  -17.1960   23.8070 C.ar      1 UNK      0.000000 
+     14 C9          9.0140  -15.5700   23.5600 C.ar      1 UNK      0.000000 
+     15 C10         9.9510  -16.4060   24.5430 C.3       1 UNK      0.000000 
+     16 C11        11.7460  -16.0910   22.8150 C.ar      1 UNK      0.000000 
+     17 C12         9.4760  -15.1150   22.3550 C.ar      1 UNK      0.000000 
+     18 C13         9.1340  -13.6140   20.3190 C.ar      1 UNK      0.000000 
+     19 C14         8.1400  -12.9550   19.4880 C.ar      1 UNK      0.000000 
+     20 C15         6.7380  -13.1050   19.7220 C.ar      1 UNK      0.000000 
+     21 C16         6.2480  -13.9250   20.8090 C.ar      1 UNK      0.000000 
+     22 C17         7.2080  -14.5800   21.6480 C.ar      1 UNK      0.000000 
+     23 C18         8.6210  -14.4320   21.4110 C.ar      1 UNK      0.000000 
+     24 C19         6.2730  -14.1710   25.6790 C.ar      1 UNK      0.000000 
+     25 C20         7.3350  -13.9900   24.7200 C.ar      1 UNK      0.000000 
+     26 C21         8.0400  -12.7240   24.5300 C.ar      1 UNK      0.000000 
+     27 C22         7.6610  -11.5880   25.3260 C.ar      1 UNK      0.000000 
+     28 C23         6.5900  -11.7940   26.2730 C.ar      1 UNK      0.000000 
+     29 C24         5.8780  -13.0410   26.4820 C.ar      1 UNK      0.000000 
+     30 BR1        10.3610  -13.8190   30.0390 B         1 UNK      0.000000 
+     31 BR2         6.0780  -10.4650   27.3190 B         1 UNK      0.000000 
+     32 H01         5.0770  -13.1200   27.2170 H         1 UNK      0.000000 
+     33 H02         9.0800  -17.5960   26.8950 H         1 UNK      0.000000 
+     34 H03         9.1870  -16.5170   29.2460 H         1 UNK      0.000000 
+     35 H05        11.0340  -12.9290   27.4860 H         1 UNK      0.000000 
+     36 H06        10.9510  -13.9780   25.1640 H         1 UNK      0.000000 
+     37 H07         7.2500  -16.0490   24.6410 H         1 UNK      0.000000 
+     38 H10         9.4710  -17.3820   24.6100 H         1 UNK      0.000000 
+     39 H12        10.2030  -13.5030   20.1360 H         1 UNK      0.000000 
+     40 H13         8.4740  -12.3280   18.6620 H         1 UNK      0.000000 
+     41 H14         6.0270  -12.5940   19.0720 H         1 UNK      0.000000 
+     42 H15         5.1790  -14.0410   20.9850 H         1 UNK      0.000000 
+     43 H16         5.7820  -15.1370   25.7940 H         1 UNK      0.000000 
+     44 H17         8.8410  -12.6420   23.7960 H         1 UNK      0.000000 
+     45 H18         8.1560  -10.6230   25.2200 H         1 UNK      0.000000 
+     46 H8         14.3160  -17.6334   23.9919 H         1 UNK      0.000000 
+@<TRIPOS>BOND
+     1    1    4 ar
+     2    1   11 ar
+     3    1   15 1
+     4    2    9 ar
+     5    2   15 1
+     6    2   16 ar
+     7    3   12 1
+     8    3   22 1
+     9    4    6 ar
+    10    4   33 1
+    11    5   13 ar
+    12    5   16 ar
+    13    6    8 ar
+    14    6   34 1
+    15    7   16 1
+    16    7   17 2
+    17    8   10 ar
+    18    8   30 1
+    19    9   13 ar
+    20   10   11 ar
+    21   10   35 1
+    22   11   36 1
+    23   12   14 1
+    24   12   25 1
+    25   12   37 1
+    26   14   15 1
+    27   14   17 2
+    28   15   38 1
+    29   17   23 1
+    30   18   19 ar
+    31   18   23 ar
+    32   18   39 1
+    33   19   20 ar
+    34   19   40 1
+    35   20   21 ar
+    36   20   41 1
+    37   21   22 ar
+    38   21   42 1
+    39   22   23 ar
+    40   24   25 ar
+    41   24   29 ar
+    42   24   43 1
+    43   25   26 ar
+    44   26   27 ar
+    45   26   44 1
+    46   27   28 ar
+    47   27   45 1
+    48   28   29 ar
+    49   28   31 1
+    50   29   32 1
+    51   46   13 1
+@<TRIPOS>SUBSTRUCTURE
+     1 UNK     1 RESIDUE           4 A     UNK     0 ROOT
+
+>> parmchk -i nin.edited.mol2 -f mol2 -o nin.edited.mol2.frcmod -p $AMBERHOME/dat/leap/parm/gaff.dat
+### THE leapscript ###
+modsnin = loadAmberParams nin.edited.mol2.frcmod
+modsDLM = loadAmberParams dlm_edit.frcmod
+source leaprc.ff99SB
+
+nin = loadMol2 nin.edited.mol2
+
+# Delete N-terminal acetyl and C-terminal dimethyl amine group
+
+# Should still be net neutral -- all removed atoms shoulve have had charge 0.0
+
+set nin name "nin"
+set nin.1 name "nin"
+
+savepdb nin nin.pdb
+
+
+# Make a list of info needed for the library
+# This is necessary in order to make sure the parameter modifications are stored to the off file.
+myresidue = { nin modsnin modsDLM }
+saveoff myresidue nin.off
+
+quit
+
+### -------------- ###
+-I: Adding /home/tud67309/local/amber11/dat/leap/prep to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/lib to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/parm to search path.
+-I: Adding /home/tud67309/local/amber11/dat/leap/cmd to search path.
+-f: Source /tmp/tmp3i5umr.
+
+Welcome to LEaP!
+(no leaprc in search path)
+Sourcing: /tmp/tmp3i5umr
+Loading parameters: ./nin.edited.mol2.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+remark goes here
+Unknown keyword: C.ar-C.ar- in parameter file.
+Unknown keyword: C.ar-C.3-N in parameter file.
+Unknown keyword: N.ar-N.ar- in parameter file.
+Unknown keyword: N.ar-C.3-H in parameter file.
+Unknown keyword: N.ar-C.ar- in parameter file.
+Unknown keyword: O.3-C.3-C. in parameter file.
+Unknown keyword: O.3-C.3-H  in parameter file.
+Unknown keyword: C.ar-C.ar- in parameter file.
+Unknown keyword: C.3-O.3-C. in parameter file.
+Unknown keyword: C.ar-N.ar- in parameter file.
+Loading parameters: ./dlm_edit.frcmod
+Reading force field modification type file (frcmod)
+Reading title:
+remark goes here - Originally created by DLM, VAV edited to mix-n-match AMBER (uppercase) and GAFF (lowercase) atomtypes
+No mass defined for non-bond atom type: CA - skipping
+No mass defined for non-bond atom type: C - skipping
+No mass defined for non-bond atom type: CT - skipping
+No mass defined for non-bond atom type: O - skipping
+No mass defined for non-bond atom type: HA - skipping
+No mass defined for non-bond atom type: HC - skipping
+----- Source: /home/tud67309/local/amber11/dat/leap/cmd/leaprc.ff99SB
+----- Source of /home/tud67309/local/amber11/dat/leap/cmd/leaprc.ff99SB done
+Log file: ./leap.log
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/parm99.dat
+Reading title:
+PARM99 for DNA,RNA,AA, organic molecules, TIP3P wat. Polariz.& LP incl.02/04/99
+Loading parameters: /home/tud67309/local/amber11/dat/leap/parm/frcmod.ff99SB
+Reading force field modification type file (frcmod)
+Reading title:
+Modification/update of parm99.dat (Hornak & Simmerling)
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/all_nucleic94.lib
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/all_amino94.lib
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/all_aminoct94.lib
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/all_aminont94.lib
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/ions94.lib
+Loading library: /home/tud67309/local/amber11/dat/leap/lib/solvents.lib
+Loading Mol2 file: ./nin.edited.mol2
+Reading MOLECULE named nin.pdb
+Writing pdb file: nin.pdb
+Building topology.
+Building atom parameters.
+	Quit

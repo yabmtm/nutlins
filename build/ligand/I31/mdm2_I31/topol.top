@@ -1,0 +1,24 @@
+; Include forcefield topology
+#include "amber99sb-ildn.ff/forcefield.itp"
+
+; Include structural topologies
+#include "mdm2.itp"
+#include "I31.itp"
+
+; Include solvation topology
+#include "amber99sb-ildn.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+[ position_restraints ];  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+[ system ]
+
+
+; Include ion topology
+#include "amber99sb-ildn.ff/ions.itp"
+
+[ molecules ]
+Protein_Chain_A    1
+I31    21

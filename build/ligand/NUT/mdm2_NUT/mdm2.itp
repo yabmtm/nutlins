@@ -1,0 +1,24 @@
+#ifdef POSRES
+#include "posre.itp"
+#endif
+
+; Include water topology
+#include "amber99sb-ildn.ff/tip3p.itp"
+
+#ifdef POSRES_WATER
+; Position restraint for each water oxygen
+[ position_restraints ]
+;  i funct       fcx        fcy        fcz
+   1    1       1000       1000       1000
+#endif
+
+; Include topology for ions
+#include "amber99sb-ildn.ff/ions.itp"
+
+[ system ]
+; Name
+E3 UBIQUITIN-PROTEIN LIGASE MDM2
+
+[ molecules ]
+; Compound        #mols
+Protein_chain_A     1

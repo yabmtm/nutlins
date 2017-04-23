@@ -1,0 +1,34 @@
+remark goes here
+MASS
+
+BOND
+
+ANGLE
+n -ce-ca   67.297     115.555   Calculated with empirical approach
+n -ce-n2   70.560     125.950   same as n -c2-n2
+ce-n -c3   63.060     119.980   same as c2-n -c3
+
+DIHE
+c -n -ce-ca   1    0.650       180.000           2.000      same as X -c2-n -X 
+c -n -ce-n2   1    0.650       180.000           2.000      same as X -c2-n -X 
+n -ce-ca-ca   1    2.550       180.000           2.000      same as X -c2-ca-X 
+n -ce-n2-c3   1    4.150       180.000           2.000      same as X -c2-n2-X 
+ca-ce-n -c3   1    0.650       180.000           2.000      same as X -c2-n -X 
+ca-ce-n2-c3   1    4.150       180.000           2.000      same as X -c2-n2-X 
+ca-ca-ce-n2   1    6.650       180.000           2.000      same as X -c2-ce-X 
+c3-n -ce-n2   1    0.650       180.000           2.000      same as X -c2-n -X 
+
+IMPROPER
+n -n -c -o         10.5          180.0         2.0          General improper torsional angle (2 general atom types)
+c -c3-n -c3         1.1          180.0         2.0          General improper torsional angle (1 general atom type)
+c3-n -c -o         10.5          180.0         2.0          General improper torsional angle (2 general atom types)
+c -c3-n -ce         1.1          180.0         2.0          Using default value
+ca-n -ce-n2         1.1          180.0         2.0          Using default value
+ca-ca-ca-ce         1.1          180.0         2.0          Using default value
+ca-ca-ca-ha         1.1          180.0         2.0          General improper torsional angle (2 general atom types)
+ca-ca-ca-os         1.1          180.0         2.0          Using default value
+
+NONBON
+
+
+

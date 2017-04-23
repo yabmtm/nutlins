@@ -1,0 +1,8 @@
+#!/bin/bash
+
+for i in YIN.pdb; do
+    NAME=`echo "$i" | cut -d'.' -f1`
+    mkdir $NAME; mv $i $NAME; cd $NAME
+    gmx pdb2gmx -f $i -o #NAME_processed.gro -water spce
+    cd ..
+done

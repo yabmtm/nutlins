@@ -1,0 +1,6 @@
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff 20U.off
+20U = sequence { 20U }
+saveAmberParm 20U 20U.prmtop 20U.crd
+quit

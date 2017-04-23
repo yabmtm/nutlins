@@ -1,0 +1,97 @@
+----------------------------------------
+Begin Batch Job Prologue Mon Oct 17 19:37:32 EST 2016
+Job ID:           688021.owlsnest1.nfs
+Username:         tug27224
+Group:            stdchem
+Job Name:         YIN_umbrella_0.pf
+Resources List:   neednodes=1:ppn=12,nodes=1:ppn=12,walltime=12:00:00
+Queue:            normal
+Account:          
+Nodes:            w032 
+End Batch Job Prologue Mon Oct 17 19:37:32 EST 2016
+----------------------------------------
+ModuleCmd_Use.c(230):ERROR:64: Directory '/home/tuf10875/pkg/modulefiles/' not found
+gromacs(8):ERROR:105: Unable to locate a modulefile for 'gromacs/5.1.2-mine'
+GROMACS:    mdrun_mpi, VERSION 5.0.4
+
+GROMACS is written by:
+Emile Apol         Rossen Apostolov   Herman J.C. Berendsen Par Bjelkmar       
+Aldert van Buuren  Rudi van Drunen    Anton Feenstra     Sebastian Fritsch  
+Gerrit Groenhof    Christoph Junghans Peter Kasson       Carsten Kutzner    
+Per Larsson        Justin A. Lemkul   Magnus Lundborg    Pieter Meulenhoff  
+Erik Marklund      Teemu Murtola      Szilard Pall       Sander Pronk       
+Roland Schulz      Alexey Shvetsov    Michael Shirts     Alfons Sijbers     
+Peter Tieleman     Christian Wennberg Maarten Wolf       
+and the project leaders:
+Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2014, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      mdrun_mpi, VERSION 5.0.4
+Executable:   /home/tue91994/Programs/gromacs-5.0.4-installed/bin/mdrun_mpi
+Library dir:  /home/tue91994/Programs/gromacs-5.0.4-installed/share/gromacs/top
+Command line:
+  mdrun_mpi -deffnm buildit
+
+
+Number of hardware threads detected (12) does not match the number reported by OpenMP (1).
+Consider setting the launch configuration manually!
+Reading file buildit.tpr, VERSION 4.5.3 (single precision)
+Note: file tpx version 73, software tpx version 100
+
+The stochastic dynamics integrator sd2 is deprecated, since
+it is slower than integrator sd and is slightly less accurate
+with constraints. Use the sd integrator.
+The number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 1
+Using 12 MPI processes
+Compiled SIMD instructions: SSE2 (Gromacs could use SSE4.1 on this machine, which is better)
+
+NOTE: This file uses the deprecated 'group' cutoff_scheme. This will be
+removed in a future release when 'verlet' supports all interaction forms.
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+starting mdrun 'nut_mdm2 in water'
+1250000 steps,   2500.0 ps.
+
+NOTE: Turning on dynamic load balancing
+
+
+Writing final coordinates.
+
+ Average load imbalance: 0.9 %
+ Part of the total run time spent waiting due to load imbalance: 0.4 %
+ Steps where the load balancing was limited by -rdd, -rcon and/or -dds: X 0 % Y 0 %
+
+
+               Core t (s)   Wall t (s)        (%)
+       Time:    72924.672     6091.907     1197.1
+                         1h41:31
+                 (ns/day)    (hour/ns)
+Performance:       35.457        0.677
+
+gcq#285: "Oh, There Goes Gravity" (Eminem)
+
+----------------------------------------
+Begin Batch Job Epilogue Mon Oct 17 21:19:08 EST 2016
+Job ID:           688021.owlsnest1.nfs
+Username:         tug27224
+Group:            stdchem
+Job Name:         YIN_umbrella_0.pf
+Session:          26955
+Limits:           neednodes=1:ppn=12,nodes=1:ppn=12,walltime=12:00:00
+Resources:        cput=20:18:17,mem=213820kb,vmem=27107244kb,walltime=01:41:36
+Queue:            normal
+Account:          
+End Batch Job Epilogue Mon Oct 17 21:19:28 EST 2016
+----------------------------------------

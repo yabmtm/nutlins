@@ -1,0 +1,6 @@
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff 1MQ.off
+1MQ = sequence { 1MQ }
+saveAmberParm 1MQ 1MQ.prmtop 1MQ.crd
+quit

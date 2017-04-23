@@ -1,0 +1,6 @@
+source leaprc.gaff
+gaff = loadamberparams gaff.dat
+loadoff nin.off
+nin = sequence { nin }
+saveAmberParm nin nin.prmtop nin.crd
+quit

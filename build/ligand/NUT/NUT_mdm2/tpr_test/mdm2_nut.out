@@ -1,0 +1,89 @@
+----------------------------------------
+Begin Batch Job Prologue Thu Oct 20 13:27:32 EST 2016
+Job ID:           688543.owlsnest1.nfs
+Username:         tug27224
+Group:            stdchem
+Job Name:         mdm2_nut.pf
+Resources List:   neednodes=1:ppn=12,nodes=1:ppn=12,walltime=12:00:00
+Queue:            normal
+Account:          
+Nodes:            w019 
+End Batch Job Prologue Thu Oct 20 13:27:32 EST 2016
+----------------------------------------
+ModuleCmd_Use.c(230):ERROR:64: Directory '/home/tuf10875/pkg/modulefiles/' not found
+gromacs(8):ERROR:105: Unable to locate a modulefile for 'gromacs/5.1.2-mine'
+GROMACS:    mdrun_mpi, VERSION 5.0.4
+
+GROMACS is written by:
+Emile Apol         Rossen Apostolov   Herman J.C. Berendsen Par Bjelkmar       
+Aldert van Buuren  Rudi van Drunen    Anton Feenstra     Sebastian Fritsch  
+Gerrit Groenhof    Christoph Junghans Peter Kasson       Carsten Kutzner    
+Per Larsson        Justin A. Lemkul   Magnus Lundborg    Pieter Meulenhoff  
+Erik Marklund      Teemu Murtola      Szilard Pall       Sander Pronk       
+Roland Schulz      Alexey Shvetsov    Michael Shirts     Alfons Sijbers     
+Peter Tieleman     Christian Wennberg Maarten Wolf       
+and the project leaders:
+Mark Abraham, Berk Hess, Erik Lindahl, and David van der Spoel
+
+Copyright (c) 1991-2000, University of Groningen, The Netherlands.
+Copyright (c) 2001-2014, The GROMACS development team at
+Uppsala University, Stockholm University and
+the Royal Institute of Technology, Sweden.
+check out http://www.gromacs.org for more information.
+
+GROMACS is free software; you can redistribute it and/or modify it
+under the terms of the GNU Lesser General Public License
+as published by the Free Software Foundation; either version 2.1
+of the License, or (at your option) any later version.
+
+GROMACS:      mdrun_mpi, VERSION 5.0.4
+Executable:   /home/tue91994/Programs/gromacs-5.0.4-installed/bin/mdrun_mpi
+Library dir:  /home/tue91994/Programs/gromacs-5.0.4-installed/share/gromacs/top
+Command line:
+  mdrun_mpi -deffnm buildit3
+
+
+Number of hardware threads detected (12) does not match the number reported by OpenMP (1).
+Consider setting the launch configuration manually!
+Reading file buildit3.tpr, VERSION 5.0.4 (single precision)
+
+The stochastic dynamics integrator sd2 is deprecated, since
+it is slower than integrator sd and is slightly less accurate
+with constraints. Use the sd integrator.
+The number of OpenMP threads was set by environment variable OMP_NUM_THREADS to 1
+Using 12 MPI processes
+Compiled SIMD instructions: SSE2 (Gromacs could use SSE4.1 on this machine, which is better)
+
+NOTE: This file uses the deprecated 'group' cutoff_scheme. This will be
+removed in a future release when 'verlet' supports all interaction forms.
+
+
+Non-default thread affinity set probably by the OpenMP library,
+disabling internal thread affinity
+starting mdrun 'nut_mdm2 in water'
+10000000 steps,  20000.0 ps.
+
+NOTE: Turning on dynamic load balancing
+
+=>> PBS: job killed: walltime 43229 exceeded limit 43200
+mpirun: killing job...
+
+--------------------------------------------------------------------------
+mpirun noticed that process rank 0 with PID 19451 on node w019 exited on signal 0 (Unknown signal 0).
+--------------------------------------------------------------------------
+mpirun: clean termination accomplished
+
+12 total processes killed (some possibly by mpirun during cleanup)
+----------------------------------------
+Begin Batch Job Epilogue Fri Oct 21 01:28:01 EST 2016
+Job ID:           688543.owlsnest1.nfs
+Username:         tug27224
+Group:            stdchem
+Job Name:         mdm2_nut.pf
+Session:          19368
+Limits:           neednodes=1:ppn=12,nodes=1:ppn=12,walltime=12:00:00
+Resources:        cput=144:01:37,mem=213444kb,vmem=27106612kb,walltime=12:00:30
+Queue:            normal
+Account:          
+End Batch Job Epilogue Fri Oct 21 01:28:22 EST 2016
+----------------------------------------
